@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 2 - TailwindCSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="flex flex-col gap-2 min-h-screen md:text-lg">
+    <header class="bg-blue-100 flex flex-col gap-2 p-3">
+      <h2 class="text-xl font-extrabold">Brand</h2>
+      <div class="arrow">⬇️</div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="flex-grow-1 flex flex-col gap-2 layout">
+      <aside class="bg-gray-200 flex flex-row gap-3 p-2">
+        <section>Section 1</section>
+        <section>Section 2</section>
+        <section>Section 3</section>
+      </aside>
+
+      <main class="bg-yellow-100 flex-grow-1 p-2">
+        <div class="md:flex md:flex-row md:gap-4 md:items-end">
+          <img
+            src="https://placehold.co/200x200.png"
+            alt="Image Placeholder 200x200"
+            class="mx-auto md:mx-0"
+          />
+
+          <div class="mt-3">
+            <h2 class="text-3xl font-bold text-center">Main Content Heading</h2>
+            <p>
+              This is a paragraph of text in the main content area. It provides
+              information about the topic discussed in this section.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="text-xl md:text-3xl font-bold mt-5 md:mt-10">Section 1</h3>
+        <p>Details about Section 1 go here.</p>
+
+        <h3 class="text-xl md:text-3xl font-bold mt-2 md:mt-7">Section 2</h3>
+        <p>Details about Section 2 go here.</p>
+
+        <h3 class="text-xl md:text-3xl font-bold mt-2 md:mt-7">Section 3</h3>
+        <p>Details about Section 3 go here.</p>
+      </main>
+    </div>
+
+    <footer class="bg-gray-200 text-center p-3">
+      Footer content goes here
+    </footer>
+  </body>
+</html>

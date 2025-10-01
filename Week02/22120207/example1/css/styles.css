@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+header {
+  background-color: lightblue;
+}
+
+aside {
+  background-color: yellow;
+}
+
+main {
+  background-color: lightgreen;
+}
+
+footer {
+  background-color: orange;
+}
+
+section {
+  flex-grow: 1;
+}
+
+aside,
+main,
+header,
+footer {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside,
+  main {
+    height: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    flex-grow: 1;
+  }
+
+  main {
+    flex-grow: 6;
+  }
+}

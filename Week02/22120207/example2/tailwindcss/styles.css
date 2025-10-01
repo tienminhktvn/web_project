@@ -1,0 +1,28 @@
+@media only screen and (min-width: 576px) {
+  .layout {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    flex-direction: column;
+    min-width: 150px;
+    max-width: 250px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
