@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-200">
+    <div class="h-screen">
+      <form class="flex flex-col justify-center items-center h-full">
+        <div class="md:w-1/2 sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto">
+          <div class="w-full shadow-[6px_5px_6px_0px_rgba(0,_0,_0,_0.1)]">
+            <div
+              class="text-center bg-blue-500 text-white p-4 sm:text-xs md:text-xl font-bold rounded-t-xl"
+            >
+              <h1>User Registration Form</h1>
+            </div>
+
+            <div class="py-5 px-10 bg-white flex flex-col gap-4 rounded-b-xl">
+              <div>
+                <label for="fullname">Họ tên</label>
+                <input
+                  id="fullname"
+                  name="fullname"
+                  type="text"
+                  class="bg-gray-100 block w-full p-3 text-blue-700 placeholder-blue-700 rounded-lg mt-1 outline outline-2 outline-transparent focus:outline-sky-500 hover:outline-sky-500"
+                  placeholder="Họ tên của bạn"
+                />
+              </div>
+
+              <div>
+                <label for="username">Username</label>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  class="bg-gray-100 block w-full p-3 text-blue-700 placeholder-blue-700 rounded-lg mt-1 outline outline-2 outline-transparent focus:outline-sky-500 hover:outline-sky-500"
+                  placeholder="Nhập username của bạn"
+                />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="bg-gray-100 block w-full p-3 text-blue-700 placeholder-blue-700 rounded-lg mt-1 outline outline-2 outline-transparent focus:outline-sky-500 hover:outline-sky-500"
+                  placeholder="Nhập email của bạn"
+                />
+              </div>
+
+              <div>
+                <label for="phone">Số điện thoại</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  class="bg-gray-100 block w-full p-3 text-blue-700 placeholder-blue-700 rounded-lg mt-1 outline outline-2 outline-transparent focus:outline-sky-500 hover:outline-sky-500"
+                  placeholder="Nhập số điện thoại của bạn"
+                />
+              </div>
+
+              <div>
+                <label for="birthday">Ngày sinh</label>
+                <input
+                  id="birthday"
+                  name="birthday"
+                  type="date"
+                  class="bg-gray-100 block w-full p-3 text-blue-700 placeholder-blue-700 rounded-lg mt-1 outline outline-2 outline-transparent focus:outline-sky-500 hover:outline-sky-500"
+                />
+              </div>
+
+              <button
+                type="button"
+                class="text-white p-2 bg-blue-500 hover:bg-blue-600 active:bg-blue-500 rounded-3xl text-md font-bold"
+              >
+                Đăng ký / Đăng nhập
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>

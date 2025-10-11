@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bé Tập Tính</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen flex justify-center items-center">
+    <div class="container mx-auto">
+      <div class="max-w-2xl mx-auto bg-blue-300 p-6 shadow-xl rounded-2xl">
+        <form id="calculatorForm">
+          <h1 class="text-3xl font-bold mb-6">Bé Tập Tính</h1>
+
+          <div class="lg:flex lg:space-x-7">
+            <div class="flex-1">
+              <div class="mb-4 flex items-center">
+                <label
+                  for="firstNumber"
+                  class="w-[43%] lg:w-[43%] font-semibold mr-3"
+                  >Số thứ nhất</label
+                >
+                <input
+                  type="text"
+                  id="firstNumber"
+                  class="border rounded w-full p-1"
+                  placeholder="Nhập số thứ nhất"
+                />
+              </div>
+
+              <div class="mb-4 flex items-center">
+                <label
+                  for="secondNumber"
+                  class="w-[43%] lg:w-[43%] font-semibold mr-3"
+                  >Số thứ hai</label
+                >
+                <input
+                  type="text"
+                  id="secondNumber"
+                  class="border rounded w-full p-1"
+                  placeholder="Nhập số thứ hai"
+                />
+              </div>
+
+              <div class="mb-4 flex items-center">
+                <label
+                  for="result"
+                  class="w-[43%] lg:w-[43%] font-semibold mr-3"
+                  >Kết quả</label
+                >
+                <input
+                  type="text"
+                  id="result"
+                  class="border rounded w-full p-1"
+                  readonly
+                  placeholder="Kết quả"
+                />
+              </div>
+            </div>
+
+            <div class="mt-4 lg:mt-0 flex-1">
+              <div class="grid grid-cols-2 gap-4 lg:gap-y-8 font-semibold">
+                <label>
+                  <input
+                    type="radio"
+                    name="operation"
+                    value="add"
+                    class="mr-2"
+                  />
+                  Cộng
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="operation"
+                    value="subtract"
+                    class="mr-2"
+                  />
+                  Trừ
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="operation"
+                    value="multiply"
+                    class="mr-2"
+                  />
+                  Nhân
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="operation"
+                    value="divide"
+                    class="mr-2"
+                  />
+                  Chia
+                </label>
+              </div>
+
+              <div class="mt-4">
+                <button
+                  type="button"
+                  onclick="calculate()"
+                  class="w-28 bg-red-500 p-2 text-white rounded"
+                >
+                  Tính
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <p class="font-semibold inline-block mt-4">
+          Thông báo: <span id="notification" class="text-red-500"></span>
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

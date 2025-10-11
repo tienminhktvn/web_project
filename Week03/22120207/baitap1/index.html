@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/Favicon/favicon-32x32.adae7142.png"
+    />
+  </head>
+  <body>
+    <div class="chess-board">
+      <!-- Begin First Player -->
+      <div class="row">
+        <div class="cell">
+          <img
+            id="black-rook-a8"
+            class="chess"
+            src="./images/Black/Black-Rook.png"
+            alt="Black-Rook"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-knight-b8"
+            class="chess"
+            src="./images/Black/Black-Knight.png"
+            alt="Black-Knight"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-bishop-c8"
+            class="chess"
+            src="./images/Black/Black-Bishop.png"
+            alt="Black-Bishop"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-queen-d8"
+            class="chess"
+            src="./images/Black/Black-Queen.png"
+            alt="Black-Queen"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-king-e8"
+            class="chess"
+            src="./images/Black/Black-King.png"
+            alt="Black-King"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-bishop-f8"
+            class="chess"
+            src="./images/Black/Black-Bishop.png"
+            alt="Black-Bishop"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-knight-g8"
+            class="chess"
+            src="./images/Black/Black-Knight.png"
+            alt="Black-Knight"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-rook-h8"
+            class="chess"
+            src="./images/Black/Black-Rook.png"
+            alt="Black-Rook"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <img
+            id="black-pawn-a7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-b7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-c7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-d7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-e7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-f7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-g7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="black-pawn-h7"
+            class="chess"
+            src="./images/Black/Black-Pawn.png"
+            alt="Black-Pawn"
+          />
+        </div>
+      </div>
+      <!-- End First Player -->
+
+      <div class="row">
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+        <div class="cell empty-cell"></div>
+      </div>
+
+      <!-- Begin Second Player -->
+      <div class="row">
+        <div class="cell">
+          <img
+            id="white-pawn-a2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-b2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-c2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-d2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-e2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-f2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-g2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-pawn-h2"
+            class="chess"
+            src="./images/White/White-Pawn.png"
+            alt="White-Pawn"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <img
+            id="white-rook-a1"
+            class="chess"
+            src="./images/White/White-Rook.png"
+            alt="White-Rook"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-knight-b1"
+            class="chess"
+            src="./images/White/White-Knight.png"
+            alt="White-Knight"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-bishop-c1"
+            class="chess"
+            src="./images/White/White-Bishop.png"
+            alt="White-Bishop"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-queen-d1"
+            class="chess"
+            src="./images/White/White-Queen.png"
+            alt="White-Queen"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-king-e1"
+            class="chess"
+            src="./images/White/White-King.png"
+            alt="White-King"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-bishop-f1"
+            class="chess"
+            src="./images/White/White-Bishop.png"
+            alt="White-Bishop"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-knight-g1"
+            class="chess"
+            src="./images/White/White-Knight.png"
+            alt="White-Knight"
+          />
+        </div>
+        <div class="cell">
+          <img
+            id="white-rook-h1"
+            class="chess"
+            src="./images/White/White-Rook.png"
+            alt="White-Rook"
+          />
+        </div>
+      </div>
+      <!-- End Second Player -->
+    </div>
+    <h1 class="turn-announce">WHITE'S TURN</h1>
+  </body>
+
+  <script src="main.js"></script>
+</html>
