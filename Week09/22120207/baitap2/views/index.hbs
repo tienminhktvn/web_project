@@ -1,0 +1,72 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-light">
+          Calculator
+        </div>
+        <div class="card-body">
+          <form id="calcForm">
+
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-light">X</span>
+              <input
+                type="number"
+                step="any"
+                class="form-control"
+                name="x"
+                id="x"
+                required
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-light">Y</span>
+              <input
+                type="number"
+                step="any"
+                class="form-control"
+                name="y"
+                id="y"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <select
+                class="form-select text-center"
+                name="operator"
+                id="operator"
+              >
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button
+                type="submit"
+                class="btn btn-primary px-4"
+              >Calculate</button>
+            </div>
+          </form>
+
+          <div
+            class="mt-4 d-flex justify-content-end"
+            id="resultContainer"
+            style="display: none !important;"
+          >
+            <div
+              class="p-3 text-white rounded-pill bg-result fs-4"
+              id="resultValue"
+            >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

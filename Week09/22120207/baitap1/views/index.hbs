@@ -1,0 +1,46 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5"> <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    Calculator
+                </div>
+                <div class="card-body">
+                    <form action="/" method="POST">
+                        
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-light">X</span>
+                            <input step="any" class="form-control" name="x" value="{{x}}" required>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-light">Y</span>
+                            <input step="any" class="form-control" name="y" value="{{y}}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <select class="form-select text-center" name="operator">
+                                <option value="+" {{#if (eq operator '+')}}selected{{/if}}>+</option>
+                                <option value="-" {{#if (eq operator '-')}}selected{{/if}}>-</option>
+                                <option value="*" {{#if (eq operator '*')}}selected{{/if}}>*</option>
+                                <option value="/" {{#if (eq operator '/')}}selected{{/if}}>/</option>
+                            </select>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="submit" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </form>
+
+                    {{#if isCalculated}}
+                    <div class="mt-4 d-flex justify-content-end">
+                        <div class="p-3 text-white rounded-pill bg-result fs-4">
+                            {{result}}
+                        </div>
+                    </div>
+                    {{/if}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

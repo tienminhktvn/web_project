@@ -1,0 +1,32 @@
+<div class="list-container">
+  <div class="list-header">
+    <h2 class="list-title">List of feedback</h2>
+  </div>
+
+  <div class="list-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th style="width: 50px;">#</th>
+          <th style="width: 25%;">Name</th>
+          <th>Email</th>
+          <th style="width: 100px;">Attend</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each attendees}}
+          <tr>
+            <td>{{this.index}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.attend}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="list-footer">
+    <a href="/" class="btn btn-primary">Go home</a>
+  </div>
+</div>
